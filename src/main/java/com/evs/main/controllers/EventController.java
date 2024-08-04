@@ -62,7 +62,7 @@ public class EventController {
 	public List<Event> getEventByVenue(@PathVariable Long venueId) {
 	
 		System.out.println("Venue id entered by client "+ venueId);
-		return eventService.getEventByVenue(venueId);
+		return eventService.getEventByVenue(venueId); 
 	}
 
 	@GetMapping("/organizer/{organizerId}")
